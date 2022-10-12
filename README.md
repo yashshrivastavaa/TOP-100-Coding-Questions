@@ -1,4 +1,4 @@
-# <h1 align="center">TOP 100 CODE</h1>
+# <h1 align="center"><TOP 100 CODE/></h1>
 
 **<h3 align="center">This repository contains Java, C, C++ and Python solutions to TOP 100 CODE</h3>**
 
