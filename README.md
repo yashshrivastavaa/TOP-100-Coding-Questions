@@ -8,7 +8,7 @@
 
 <h1 align="center">🧑🏻About Us</h1>
 &nbsp;&nbsp;
-<div align= "center"><img src="Assets/MyImage.jpg" width="550" height="300"/> 
+<div align= "center"><img src="Assets/MyImage.jpg" width="450" height="300"/> 
 
 &nbsp;&nbsp;&nbsp;
 
