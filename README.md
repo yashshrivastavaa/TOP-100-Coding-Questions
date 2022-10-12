@@ -11,7 +11,7 @@
 &nbsp;
 Contributions are always welcome!
 
-See [```CONTRIBUTION.md```](https://github.com/yashshrivastavaa/leetCode-Solution/blob/104fe670e698517962cd5266ebe981dd36165e61/CONTRIBUTION.md) for ways to get started.
+See [```CONTRIBUTION.md```](CONTRIBUTION.md) for ways to get started.
 
 
 
