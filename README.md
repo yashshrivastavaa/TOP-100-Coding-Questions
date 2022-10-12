@@ -36,7 +36,7 @@ For support, or to join as contributor email shrivastavayash92@gmail.com
 
 ## ℹ️Feedback
 
-If you have any feedback or suggestion, do fill the [Survey Form]()
+If you have any feedback or suggestion, do fill the [Survey Form](https://forms.gle/1TUfnLPksdR12PLv5)
 
  
 ## Thanks to all the contributors ❤️
