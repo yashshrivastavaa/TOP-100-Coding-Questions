@@ -6,7 +6,6 @@
 **<h3 align="center">These TOP 100 Code are the best selected question to help you enhance your skills, expand your knowledge and prepare for coding exams from BASIC to ADVANCE.</h3>**
 <h2></h2>
 
-&nbsp;
 ## 👨‍🏫Contributing
 
 Contributions are always welcome!
