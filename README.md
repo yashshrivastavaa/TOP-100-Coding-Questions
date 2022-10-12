@@ -32,6 +32,6 @@ If you have any feedback or suggestion, do fill the [Survey Form]()
 
  
 ## Thanks to all the contributors ❤️
-<a href = "https://github.com/yashshrivastavaa/leetCode-Solution/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo=yashshrivastavaa/leetCode-Solution"/>
+<a href = "https://github.com/yashshrivastavaa/TOP-100-Coding-Questions/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=yashshrivastavaa/TOP-100-Coding-Questions"/>
 </a>
