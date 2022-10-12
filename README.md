@@ -3,7 +3,7 @@
 **<h3 align="center">This repository contains Java, C, C++ and Python solutions to TOP 100 CODE</h3>**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<div align= "center"><img src="https://robodk.com/blog/wp-content/uploads/2018/05/Programming-Language-PNG-Download-Image.png" width="250" height="250"/></div> 
+<div align= "center"><img src="https://robodk.com/blog/wp-content/uploads/2018/05/Programming-Language-PNG-Download-Image.png" width="350" height="250"/></div> 
 
 **<h3 align="center">These TOP 100 Code are the best selected question to help you enhance your skills, expand your knowledge and prepare for coding exams from BASIC to ADVANCE.</h3>**
 <h2></h2>
