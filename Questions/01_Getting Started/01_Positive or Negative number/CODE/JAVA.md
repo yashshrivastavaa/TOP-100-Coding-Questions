@@ -1,8 +1,8 @@
-## Method 1: Using Brute Force
+# Method 1: Using Brute Force
 
 This method uses Brute Force to check whether a given integer is Positive or Negative.
 
-# INPUT
+## INPUT
 ```Java
 class Main
 {
@@ -21,7 +21,7 @@ class Main
   }
 }
 ```
-# OUTPUT
+## OUTPUT
 ```
 The number is positive
 ```
