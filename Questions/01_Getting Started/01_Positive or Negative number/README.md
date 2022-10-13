@@ -41,5 +41,4 @@ To solve the above problem we write a Java code using three different methods.
 
 ## Check The Code for the question below.
 &nbsp;
-
 [```JAVA```]() &nbsp; [```PYTHON```]() &nbsp; [```C```]() &nbsp; [```C++```]() 
