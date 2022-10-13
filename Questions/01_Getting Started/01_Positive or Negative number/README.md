@@ -36,7 +36,6 @@ The Above methods are discussed in depth in the sections below.
 &nbsp; &nbsp; &nbsp;
 
 ## Check The Code for the question below.
-
 <div align="center">
 <a href="CODE/C.md" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="100"/></a>
 &nbsp;&nbsp;&nbsp;
