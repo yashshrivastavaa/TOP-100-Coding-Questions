@@ -40,7 +40,6 @@ To solve the above problem we write a Java code using three different methods.
 &nbsp; &nbsp; &nbsp;
 
 ## Check The Code for the question below.
-&nbsp;
 
 <div align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="100"/>
