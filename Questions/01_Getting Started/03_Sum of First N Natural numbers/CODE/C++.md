@@ -141,7 +141,7 @@ Enter a number : 10
 ```
 
 ### Working
-*   
+
 For a user input n.
 
 *   Initialize a variable sum = 0.
