@@ -1,52 +1,19 @@
-# Method 1 : Using Brute Force
+# Method 1 : Using for Loop
 
-This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
-
-
-### Algorithm
-
-The working of the above code is mentioned below
-
-* Input an integer input “number“
-* Check whether the number is divisible by 2
-* This means using modulo/remainder operator leaves 0 as a remainder
-* Do : if (number % 2 == 0)
-  * if yes, print “Even number”
-  * if not, print “Odd number”
-
-## INPUT
-```Java
-public class Main
- {
-      public static void main(String[] args) {
-           int number = 29;
-
-
-     //checking whether the number is even or odd
-     if (number % 2 == 0)
-              System.out.println(number + " is Even");
-     else
-              System.out.println(number + " is odd");
-      }
- }
-```
-## OUTPUT
-```
-29 is Odd 
-```
-
-# Method 2: Using Ternary Operator
-
-This Method uses the ternary operator to check if the integer input is divisible by 2, If true print Even or Odd otherwise.
-
+In this method we’ll add all the natural numbers until the given integer input using for loop in Java.
 
 ### Algorithm
 
-The working of the above code is as follows,
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
 
-* Input an integer input “number“
-* Check whether the number is divisible by 2 using the ternary operator
-* (number % 2) ? (cout <<“Even”) : (cout << “Odd”)
+The algorithm for the above code is as follows,
+
+* In the main() function initialize the required variables.
+* Run a for loop with range as N+1.
+* Keep adding the iter values to the Sum variable.
+* Print Sum variable.
+
+The output for the above mentioned code is the sum of all the natural numbers until the given value.
 
 ## INPUT
 ```Java
@@ -54,34 +21,74 @@ public class Main
  {
    public static void main (String[]args)
    {
-     int number = 29;
 
-     //Checking if the number is divisible by 2
-     String status = number % 2 == 0 ? " is Even" : " is Odd";
-       System.out.println (number + status);
+     int n = 10;
+     int sum = 0;
+
+     for (int i = 1; i <= n; i++)
+         sum += i;
+       System.out.println (sum);
    }
  }
 ```
 ## OUTPUT
 ```
- 29 is Odd
+55
 ```
 
-# Method 3: Using Bitwise Operator
+# Method 2 : Using Formula for the Sum of Nth Term
 
-This Method uses bitwise operators to check if a given number is Even or Odd.
+In this Method we use the formula for finding the sum of N term.
 
-> Bitwise Operators: 
-> In computer programming, a bitwise operation operates on a bit string, a bit array or a binary numeral at the level of its individual bits. It is a fast and simple action, basic to the higher-level arithmetic operations and directly supported by the processor
-
+> Formula to Find the Sum of N terms: 
+> Sum = ( Num * ( Num + 1 ) ) / 2
 
 ### Algorithm
 
-The working of the above code is as follows,
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
 
-* If we have any number ‘n‘ doing bitwise ‘&‘ operation will give resultant as
-  * 1: If n is odd
-  * 0: if n is even
+The algorithm for the above code is as follows,
+
+* In the main() function initialize the required variables.
+* Substitute n with num variable in the above code and store it in sum variable.
+* Print Sum variable.
+
+This algorithm uses the formula n(n+1)/2 that can be used to find sum of first N natural numbers. This also reduces the time complexity from O(n) to O(1). The output for the above mentioned code is the sum of all the natural numbers until the given value.
+
+## INPUT
+```Java
+public class Main
+ {
+   public static void main (String[]args)
+   {
+
+     int n = 10;
+
+       System.out.println ( n*(n+1)/2);
+   }
+ }
+```
+## OUTPUT
+```
+ 55
+```
+
+# Method 3 : Using Recursion
+
+This method uses Recursion to recursively add the natural numbers up to the given integer input using Recursion in Java.
+
+### Algorithm
+
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we recursively call a function  iterate through all the numbers that lay within N and keep incrementing the sum value.
+
+The algorithm for the above code is as follows,
+
+* Define a Recursive function getSum() which takes the number input as an argument.
+* Recursively call the function and keep on adding the return statements.
+* In the main() function initialize the required variables.
+* Call the Recursive function and print out the returned value.
+
+The output for the above mentioned code is the sum of all the natural numbers until the given value.
 
 ## INPUT
 ```Java
@@ -89,25 +96,23 @@ public class Main
 {
   public static void main (String[]args)
   {
-    int number = 29;
 
-    if (isEven (number))
-        System.out.println ("Even");
-    else
-        System.out.println ("Odd");
+    int n = 10;
+    int sum = getSum (n);
+
+      System.out.println (sum);
   }
 
-
-// Returns true if n is even, else odd
-  static bool isEven (int number)
+  static int getSum (int n)
   {
+    if (n == 0)
+      return n;
 
-    // n & 1 is 1, then odd, else even
-    return (!(number & 1));
+    return n + getSum (n - 1);
   }
 }
 ```
 ## OUTPUT
 ```
-Odd
+55
 ```
