@@ -20,6 +20,7 @@ In this article, we will create a java program to check whether the number enter
  *  N > 0 then, number is Positive.
  *  N < 0 then, number is Negative.
  *  N = 0 then, number is Zero.
+ 
 &nbsp;&nbsp;
 
 To solve the above problem we write a Java code using three different methods.
