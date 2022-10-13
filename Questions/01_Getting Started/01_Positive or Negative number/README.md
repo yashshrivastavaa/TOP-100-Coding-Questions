@@ -40,5 +40,6 @@ To solve the above problem we write a Java code using three different methods.
 &nbsp; &nbsp; &nbsp;
 
 ## Check The Code for the question below.
+&nbsp;
 
-[```JAVA```]() [```PYTHON```]() [```C```]() [```C++```]() 
+[```JAVA```]() &nbsp; [```PYTHON```]() &nbsp; [```C```]() &nbsp; [```C++```]() 
