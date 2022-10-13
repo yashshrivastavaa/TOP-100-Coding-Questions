@@ -1,125 +1,128 @@
 # Method 1: Using Brute Force
 
-This method uses Brute Force to check whether a given integer is Positive or Negative.
+This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
 
 ## INPUT
 ```cpp
 #include <iostream>
 using namespace std;
-
-int main()
+int main ()
 {
-    int num = 96;
-    
-    //Conditions to check if the number is negative or positive
-    if (num > 0)
-         cout << "The number is positive";
-    else if (num < 0)
-        cout << "The number is negative";
+    int number;
+    cout << "Enter a number:"; cin >> number;
+ 
+    //checking whether the number is even or odd
+    if (number % 2 == 0)
+        cout << number << " : Even";
     else
-        cout << "Zero";
-    
+        cout << number << " : Odd";
+        
     return 0;
 }
 ```
 ## OUTPUT
 ```
-Enter a number: 96
-The number is Positive
+Enter a number: 4
+24 : Even
 ```
 
 ### Algorithm
 
-This method uses Brute Force to check whether a given integer is Positive or Negative. The Algorithm for the above code is as follows
+The working of the above code is mentioned below
 
-*   Step 1. Start
-*   Step 2. Insert the number.
-*   Step 3. If the number is greater than Zero then print “The number is Positive”
-*   Step4: If the number is smaller than zero, then print, “The number is Negative”
-*   Step 5. Else print, “The number is Zero”
-*   Step 6. Stop
+*   Input an integer input “number“
+*   Check whether the number is divisible by 2
+*   This means using modulo/remainder operator leaves 0 as a remainder
+*   Do : if (number % 2 == 0)
+    *   if yes, print “Even number”
+    *   if not, print “Odd number”
 
-# Method 2: Using Nested if-else Statements
+# Method 2: Using Ternary Operator
 
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
-
-## INPUT
-```cpp
-#include<iostream>
-using namespace std;
-
-int main()
-{
-    int num = -12;
-    
-    //Condition to check if the number is negative or positive
-    if (num >= 0)
-    {
-        if (num == 0)
-            cout << "Zero";
-        else
-            cout << "The number is positive";
-    }
-    else
-            cout << "The number is negative";
-    
-    return 0;
-}
-```
-## OUTPUT
-```
-Enter a number: -12
-The number is Negative
-```
-
-### Algorithm
-
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
-
-*   Step 1 – Start
-*   Step 2 – Insert the number.
-*   Step 3 – If the number is greater or equal move to the inner nested loop
-    *   Step 3.1 – If the number is zero, print Zero
-    *   Step 3.2 – Else print The Number is Positive
-*   Step 4 – Else the number has to be negative, Print The number is Negative
-*   Step 5 – Stop
-
-# Method 3: Using Ternary Operator
-
-This method uses a ternary operator to check whether a number is Positive or Negative.
+This Method uses the ternary operator to check if the integer input is divisible by 2, If true print Even or Odd otherwise.
 
 > Ternary Operator Syntax: 
-> ( Condition ) ? ( if True : Action) : ( if False : Action) ;
+> ( Condition ) ? ( if True : Action ) : ( if False : Action ) ;
 
 ## INPUT
 ```cpp
 #include <iostream>
-using namespace std;
+namespace std;
 
-int main()
+int main ()
 {
-    int num = -15;
+    int number;
+    cout << "Enter a number:"; cin >> number;
+
     
-    //Condition to check if the 0, positive or negative
-    
-    if(num == 0)
-            cout << "Zero"; else (num > 0) ? cout << "Positive": cout << "Negative";
+    //Checking if the number is divisible by 2
+    number % 2 == 0 ? cout << "Even":cout << "Odd";
     
     return 0;
 }
 ```
 ## OUTPUT
 ```
-Enter a number: -15
-Negative
+Enter a number: 17
+Odd
 ```
 
 ### Algorithm
 
-This method uses a ternary operator to check whether a number is Positive or Negative. The Algorithm for the above code is as follows,
+The working of the above code is as follows,
+
+*   Input an integer input “number“
+*   Check whether the number is divisible by 2 using the ternary operator
+*   (number % 2) ? (cout <<“Even”) : (cout << “Odd”)
+
+# Method 3: Using Bitwise Operator
+
+This Method uses bitwise operators to check if a given number is Even or Odd.
+
+> Bitwise Operators: 
+> In computer programming, a bitwise operation operates on a bit string, a bit array or a binary numeral at the level of its individual bits. It is a fast and simple action, basic to the higher-level arithmetic operations and directly supported by the processor.
+
+## INPUT
+```cpp
+#include <iostream>
+using namespace std;
  
-*   Step 1 – Start
-*   Step 2 – Insert the number.
-*   Step 3 – If number is equal to zero, Print Number is Zero
-*   Step 4 – Else do following – (num > 0) ? cout << “Positive”: cout << “Negative”;
-*   Step 5 – Stop
+// Returns true if n is even, else odd
+bool isEven(int number)
+{
+     
+    // n & 1 is 1, then odd, else even
+    return (!(number & 1));
+}
+ 
+// Driver code
+int main()
+{
+    int number;
+    
+    cout << "Enter the number: "; cin >> number;
+
+    if(isEven(number))
+        cout << "Even";
+    else
+        cout << "Odd";
+
+    //below can also be used instead of if else conditions
+    //isEven(number)? cout << "Even" : cout << "Odd";
+ 
+    return 0;
+}
+```
+## OUTPUT
+```
+Enter a number: 13
+Odd
+```
+
+### Algorithm
+
+The working of the above code is as follows,
+
+*   If we have any number ‘n‘ doing bitwise ‘&‘ operation will give resultant as
+    *   1: If n is odd
+    *   0: if n is even

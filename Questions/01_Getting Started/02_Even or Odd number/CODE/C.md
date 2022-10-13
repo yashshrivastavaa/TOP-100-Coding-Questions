@@ -1,117 +1,130 @@
 # Method 1: Using Brute Force
 
-This method uses Brute Force to check whether a given integer is Positive or Negative.
+This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
 
 ## INPUT
 ```c
 #include <stdio.h>
-int main()
+
+int main ()
 {
-    int num = 23;
-      
-    //Conditions to check if the number is negative/positive or zero
-    if (num > 0)
-         printf("The number is positive");
-    else if (num < 0)
-        printf("The number is negative");
+    int number;
+    printf ("Insert a number \n");
+    scanf ("%d", &number);
+
+    //Checking if the number is divisible by 2
+    if (number % 2 == 0)
+        printf ("Even");
     else
-        printf("Zero");
-    
+        printf ("Odd");
+  
     return 0;
 }
 ```
 ## OUTPUT
 ```
-Insert a number: 23
-The number is Positive
+Insert a number
+10
+Even
 ```
 
 ### Algorithm
 
 For a user input **num**
 
-*   If the num > 0: it is a positive number.
-*   If the num < 0: it is a positive number.
-*   Else the number has to be zero itself
+*   If number % 2 == 0
+    *   If true then the number is even
+    *   Else, the number has to odd
 
-Same logic we have followed in the below C program. 
+Here % is called as modulo/remainder operator
 
-# Method 2: Using Nested if-else Statements
+# Method 2: Using Ternary Operator
 
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
+This Method uses the ternary operator to check if the integer input is divisible by 2, If true print Even or Odd otherwise.
 
 ## INPUT
 ```c
 #include <stdio.h>
-int main()
+int main ()
 {
-    int num = -10;
+    int number;
+    printf ("Insert a number \n");
+    scanf ("%d", &number);
     
-    //Condition to check if num is negative/positive or zero
-    if (num >= 0)
-    {
-        if (num == 0)
-            printf("The number is 0");
-        else
-            printf("The number is Positive");
-    }
-    else
-        printf("The number is Negative");
+    //Checking if the number is divisible by 2
+    number % 2 == 0? printf ("Even"):printf ("Odd");
     
     return 0;
 }
 ```
 ## OUTPUT
 ```
-Insert a number: -10
-The number is Negative
+Insert a number
+15
+Odd
 ```
 
 ### Algorithm
 
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
+*   If number % 2 == 0
+    *   If true then the number is even
+    *   Else, the number has to odd
 
-For a user input num
+Here % is called as modulo/remainder operator
 
-*   If the num >= 0
-    *   If num == 0 : num is zero
-    *   Else number has to be positive 
-*   Else the number has to be negative
+# Method 3: Using Bitwise Operator
 
-Same logic we have followed in the below C program. 
-
-# Method 3: Using Ternary Operator
-
-This method uses a ternary operator in C to check whether a number is Positive or Negative.
+This Method uses bitwise operators to check if a given number is Even or Odd.
 
 ## INPUT
 ```c
-#include <stdio.h>
+#include <stdio.h> 
+
+// Returns true if n is even, else odd
+int isEven(int num)
+{
+    // num & 1 is 1, then odd, else even
+    return (!(num & 1));
+}
+ 
+// Driver code
 int main()
 {
-    int num = -4;
-    
-    //Condition to check if the 0, positive or negative
-    
-    if(num == 0)
-        printf("Zero");
-    else
-        (num > 0) ? printf("Positive"): printf("Negative");
-    
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+
+    isEven(num)? printf ("Even"):printf ("Odd");
+ 
     return 0;
 }
 ```
 ## OUTPUT
 ```
-Insert a number: -4
-Negative
+Insert a number
+5
+Odd
 ```
 
 ### Algorithm
 
-This method uses a ternary operator to check whether a number is Positive or Negative.
+For this method, we use the bitwise operator, in this case, bitwise and (&) How this works is below
 
-For a user input num
+*   For any number following operation : (num & 1) will always result
+    *   1: If num is odd
+    *   0: if num is even
 
-*   If the num == 0 num is zero
-*   Else (num > 0) ? printf(“Positive”): printf(“Negative”);
+**Let’s see how**
+
+```
+// 5 (in binary) : 00000101 
+// 1 (in binary) : 00000001
+
+    0 0 0 0 0 1 0 1
+
+  & 0 0 0 0 0 0 0 1
+
+  - - - - - - - - -
+
+    0 0 0 0 0 0 0 1 
+```
