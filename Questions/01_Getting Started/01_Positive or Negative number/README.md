@@ -2,8 +2,6 @@
 
 <h2>Given an integer num input the objective is to write a code to Check if a Given Number is Positive or Negative in Java Language.</h2>
 
-<br>
-
 ```
 Example
 Input : num = 11
