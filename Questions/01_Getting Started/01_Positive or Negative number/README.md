@@ -29,6 +29,7 @@ To solve the above problem we write a Java code using three different methods.
  *  Method 2: Using Nested if-else Statements
  *  Method 3: Using Ternary Operators
 &nbsp;&nbsp;
+
 The Above methods are discussed in depth in the sections below.
 
 
