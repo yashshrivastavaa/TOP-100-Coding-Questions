@@ -85,6 +85,10 @@ This method uses a nested if-else Statements to check whether a given number is 
 
 This method uses a ternary operator to check whether a number is Positive or Negative.
 
+> Ternary Operator Syntax
+> ( Condition ) ? ( if True : Action) : ( if False : Action) ;
+
+
 ## INPUT
 ```Java
 class Main
