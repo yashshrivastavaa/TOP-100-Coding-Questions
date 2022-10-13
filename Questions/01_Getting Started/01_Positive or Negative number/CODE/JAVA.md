@@ -37,5 +37,5 @@ This method uses Brute Force to check whether a given integer is Positive or Neg
 *   Step 5. Else print, “The number is Zero”
 *   Step 6. Stop
 
-
+<h2><h2/>
 # Method 2: Using Nested if-else Statements
