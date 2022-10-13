@@ -2,12 +2,13 @@
 
 <h2>Given an integer num input the objective is to write a code to Check if a Given Number is Positive or Negative in Java Language.</h2>
 
+
 ```
 Example
 Input : num = 11
 Output : Positive
 ```
-<br>
+
 <h2></h2>
 In this article, we will create a java program to check whether the number entered by the user is positive or negative. The number is demonstrated as positive or negative by comparing the entered number with the Zero(0). If the number entered by the user is greater than zero, then the number is positive, else if the number is less than zero, then the number is negative and else the number is zero.
 
