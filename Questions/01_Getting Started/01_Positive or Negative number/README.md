@@ -1,4 +1,4 @@
-<h3 align="center">Check if a Number is Positive or Negative in Java<h3/>
+<h2 align="center">Check if a Number is Positive or Negative in Java<h2/>
 <h2><h2/>
 <br/>
 
