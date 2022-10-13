@@ -13,10 +13,10 @@ Given an integer input the objective is to write a Java code to Check Whether a 
 
 Here are the Methods to solve the above mentioned problem,
 
-**Method 1** : Using Brute Force
-**Method 2** : Using Ternary Operator
-**Method 3** : Using Bitwise Operators
-
+* **Method 1** : Using Brute Force
+* **Method 2** : Using Ternary Operator
+* **Method 3** : Using Bitwise Operators
+ &nbsp;
 We’ll discuss the above mentioned methods in detail in the next section.
  
 &nbsp; &nbsp; &nbsp;
