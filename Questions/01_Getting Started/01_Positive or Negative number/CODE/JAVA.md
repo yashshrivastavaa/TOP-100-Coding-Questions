@@ -25,3 +25,17 @@ class Main
 ```
 The number is positive
 ```
+
+### Algorithm
+
+This method uses Brute Force to check whether a given integer is Positive or Negative. The Algorithm for the above code is as follows
+
+*   Step 1. Start
+*   Step 2. Insert the number.
+*   Step 3. If the number is greater than Zero then print “The number is Positive”
+*   Step 4: If the number is smaller than zero, then print, “The number is Negative”
+*   Step 5. Else print, “The number is Zero”
+*   Step 6. Stop
+
+
+# Method 2: Using Nested if-else Statements
