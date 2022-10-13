@@ -41,7 +41,7 @@ To solve the above problem we write a Java code using three different methods.
 
 ## Check The Code for the question below.
 
-<div align="center">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="100"/>
 &nbsp;&nbsp;&nbsp;
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="100"/>
@@ -49,11 +49,11 @@ To solve the above problem we write a Java code using three different methods.
 <img src="https://www.vectorlogo.zone/logos/python/python-vertical.svg" width="100"/>
 &nbsp;&nbsp;&nbsp;
 <img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" width="100"/>
-<div/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-## ℹ️Feedback
+
+
+## ℹ️ Feedback
 
 If you have any feedback or suggestion, do fill the [Survey Form](https://forms.gle/1TUfnLPksdR12PLv5)
 
