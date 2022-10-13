@@ -1,91 +1,121 @@
 # Method 1: Using Brute Force
 
-This method uses Brute Force to check whether a given integer is Positive or Negative.
+This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
 
 ## INPUT
 ```Python
-num = 15
-if num > 0:
-    print('Positive')
-elif num < 0:
-    print('Negative')
-else:
-    print('Zero')
+num = int(input("Enter a Number:")) 
+if num % 2 == 0: 
+  print("Given number is Even") 
+else: 
+  print("Given number is Odd")
 ```
 ## OUTPUT
 ```
-Positive
+Enter a Number: 5 
+Given number is Odd
 ```
 
 ### Algorithm
 
-This method uses Brute Force to check whether a given integer is Positive or Negative.
+The working of the above mentioned code is as follows,
 
-Algorithm for the above code is as follows,
+*   Start
+*   Insert a number.
+*   If the given number is divisible by 2, then print,” Given number is even”.
+*   If the given number is not divisible by 2, then print ,”Given number is odd”.
+*   Stop
 
-*   Initialize num as 15
-*   If the num > 0: it is a positive number.
-*   If the num < 0: it is a positive number.
-*   Else the number has to be zero itself
+### Explanation
 
-# Method 2: Using Nested if-else Statements
+Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not. If true, it’s even or it’s odd otherwise.
 
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
+The algorithm for the above code is as given below,
+
+*   Import the required modules using import keyword.
+*   Initialize the required variables.
+*   Check if the number is divisible by 2, if true print even or odd otherwise using print() function.
+
+The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
+
+# Method 2: Using Ternary Operator
+
+This Method uses the ternary operator to check if the integer input is divisible by 2, If true print Even or Odd otherwise.
+
+> Ternary Operator Syntax Python: 
+> ( True : Action ) if ( Condition ) else ( False : Action )
 
 ## INPUT
 ```Python
-num = 15
-if num>=0:
-    if num==0:
-        print('Zero')
-    else:
-        print("Positive")
-else:
-    print("Negative")
+num = 17
+print("Even") if num%2 == 0 else print("Odd")
 ```
 ## OUTPUT
 ```
-Positive
+Odd
 ```
 
 ### Algorithm
 
-This method uses a nested if-else Statements to check whether a given number is Positive or Negative.
+The working of the above code is as follows,
 
-Algorithm for the above code is as follows,
+*   Input an integer input num.
+*   Check whether the number is divisible by 2 using the ternary operator
+*   Ternary Operation, print(“Even”) if (num%2 == 0) else (print(“Odd”))
 
-*   Initialize num as 15
-*   If the num >= 0
-    *   If num == 0 : num is zero
-    *   Else number has to be positive 
-*   Else the number has to be negative
+### Explanation
 
-# Method 3: Using Ternary Operator
+Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not using a Ternary Operator in Python. If true, it’s even or it’s odd otherwise.
 
-This method uses a ternary operator to check whether a number is Positive or Negative.
+The algorithm for the above code is as given below,
 
-> Ternary Operator Syntax: 
-> ( Condition ) ? ( if True : Action) : ( if False : Action) ;
+*   import the required modules using import keyword.
+*   Initialize the required variables.
+*   Check if the number is divisible by 2 using a Ternary Operator, if true print even or odd otherwise using print() function.
+
+The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
+
+# Method 3: Using Bitwise Operator
+
+This Method uses bitwise operators to check if a given number is Even or Odd.
+
+> Bitwise Operators: 
+> In computer programming, a bitwise operation operates on a bit string, a bit array or a binary numeral at the level of its individual bits. It is a fast and simple action, basic to the higher-level arithmetic operations and directly supported by the processor.
 
 ## INPUT
 ```Python
-num = 15
-print("Positive" if num>=0 else "Negative")
+def isEven(num):
+  return not num&1
+
+if __name__ == "__main__":
+  num = 13
+  if isEven(num):
+    print('Even')
+  else:
+    print('Odd')
 ```
 ## OUTPUT
 ```
-Positive
+Odd
 ```
 
 ### Algorithm
 
-This method uses a ternary operator in Python to check whether a number is Positive or Negative.
+The working of the above code is as follows,
 
-For a user input num
+*   If we have any number num doing bitwise ‘&‘ operation will give resultant as
+    *   1: If n is odd
+    *   0: if n is even
 
-*   Return “Positive” if num>=0 else “Negative”.
+### Explanation
 
-Algorithm for the above code is as follows,
+Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not using Bitwise Operator. If true, it’s even or it’s odd otherwise.
 
-*   Initialize num as 15.
-*   print the output using ternary operator in python using print () function.
+The algorithm for the above code is as given below,
+
+*   Import the required modules using import keyword.
+*   Define a function isEven() which returns a boolean variable to check if the number is even or odd.
+*   Initialize the required variables.
+*   Check if the function after calling returns True or False, if true print even or odd otherwise using print() function.
+
+The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
