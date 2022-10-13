@@ -42,13 +42,13 @@ The Above methods are discussed in depth in the sections below.
 ## Check The Code for the question below.
 
 
-<a href="" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="100"/></a>
+<a href="CODE/C.md" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" width="100"/></a>
 &nbsp;&nbsp;&nbsp;
-<a href="" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="100"/></a>
+<a href="CODE/C++.md" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width="100"/></a>
 &nbsp;&nbsp;&nbsp;
-<a href="" target="blank"><img src="https://www.vectorlogo.zone/logos/python/python-vertical.svg" width="100"/></a>
+<a href="CODE/Python.md" target="blank"><img src="https://www.vectorlogo.zone/logos/python/python-vertical.svg" width="100"/></a>
 &nbsp;&nbsp;&nbsp;
-<a href="" target="blank"><img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" width="100"/></a>
+<a href="CODE/JAVA.md" target="blank"><img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" width="100"/></a>
 
 
 <div align="left"><div/>
