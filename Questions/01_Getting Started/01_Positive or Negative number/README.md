@@ -1,6 +1,6 @@
 <br>
 
-### Given an integer num input the objective is to write a code to Check if a Given Number is Positive or Negative in Java Language.
+**Given an integer num input the objective is to write a code to Check if a Given Number is Positive or Negative in Java Language.**
 
 
 ```
@@ -22,9 +22,9 @@ In this article, we will create a java program to check whether the number enter
 To solve the above problem we write a Java code using three different methods.
 &nbsp;
 
- *  Method 1: Using Brute Force
- *  Method 2: Using Nested if-else Statements
- *  Method 3: Using Ternary Operators
+ *  **Method 1:** Using Brute Force
+ *  **Method 2:** Using Nested if-else Statements
+ *  **Method 3:** Using Ternary Operators
  &nbsp;
 
 The Above methods are discussed in depth in the sections below.
@@ -48,7 +48,7 @@ The Above methods are discussed in depth in the sections below.
 
 ## ℹ️ Feedback
 
-If you have any feedback or suggestion, do fill the [Survey Form](https://forms.gle/1TUfnLPksdR12PLv5)
+**If you have any feedback or suggestion, do fill the [Survey Form](https://forms.gle/1TUfnLPksdR12PLv5)**
 
 ## Thanks to all the contributors ❤️
 <a href = "https://github.com/yashshrivastavaa/TOP-100-Coding-Questions/graphs/contributors">
