@@ -31,7 +31,7 @@ To solve the above problem we write a Java code using three different methods.
  *  Method 3: Using Ternary Operators
  &nbsp;
 
- The Above methods are discussed in depth in the sections below.
+The Above methods are discussed in depth in the sections below.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
