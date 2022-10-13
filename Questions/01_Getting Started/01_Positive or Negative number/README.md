@@ -35,7 +35,7 @@ To solve the above problem we write a Java code using three different methods.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-<img src="https://prepinsta.com/wp-content/uploads/2022/02/Artboard-%E2%80%93-13-1.webp" width="550"/>
+<div align="center"><img src="https://prepinsta.com/wp-content/uploads/2022/02/Artboard-%E2%80%93-13-1.webp" width="550"/><div/>
 
 &nbsp; &nbsp; &nbsp;
 
@@ -51,7 +51,7 @@ To solve the above problem we write a Java code using three different methods.
 <img src="https://www.vectorlogo.zone/logos/java/java-vertical.svg" width="100"/>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 ## ℹ️ Feedback
 
