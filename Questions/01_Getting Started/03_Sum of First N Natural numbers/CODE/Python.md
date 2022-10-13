@@ -1,121 +1,120 @@
-# Method 1: Using Brute Force
+# Method 1 : Using for Loop
 
-This method simply checks if the given input integer is divisible by 2 or not. If it’s divisible then print Even or Odd otherwise.
-
-## INPUT
-```Python
-num = int(input("Enter a Number:")) 
-if num % 2 == 0: 
-  print("Given number is Even") 
-else: 
-  print("Given number is Odd")
-```
-## OUTPUT
-```
-Enter a Number: 5 
-Given number is Odd
-```
-
-### Algorithm
-
-The working of the above mentioned code is as follows,
-
-*   Start
-*   Insert a number.
-*   If the given number is divisible by 2, then print,” Given number is even”.
-*   If the given number is not divisible by 2, then print ,”Given number is odd”.
-*   Stop
-
-### Explanation
-
-Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not. If true, it’s even or it’s odd otherwise.
-
-The algorithm for the above code is as given below,
-
-*   Import the required modules using import keyword.
-*   Initialize the required variables.
-*   Check if the number is divisible by 2, if true print even or odd otherwise using print() function.
-
-The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
-
-# Method 2: Using Ternary Operator
-
-This Method uses the ternary operator to check if the integer input is divisible by 2, If true print Even or Odd otherwise.
-
-> Ternary Operator Syntax Python: 
-> ( True : Action ) if ( Condition ) else ( False : Action )
+In this method we’ll add all the natural numbers until the given integer input using for loop in Python.
 
 ## INPUT
 ```Python
-num = 17
-print("Even") if num%2 == 0 else print("Odd")
+num = 5
+sum = 0
+for i in range(num+1):
+  sum+=i
+print(sum)
 ```
 ## OUTPUT
 ```
-Odd
+15
 ```
 
-### Algorithm
+### Working
 
-The working of the above code is as follows,
+For a user input num.
 
-*   Input an integer input num.
-*   Check whether the number is divisible by 2 using the ternary operator
-*   Ternary Operation, print(“Even”) if (num%2 == 0) else (print(“Odd”))
+* Initialize a variable sum = 0.
+* Using a for loop in iteration ‘i’ iterate between [1, num].
+* Each time add ‘i’ to current sum as sum = sum + i.
+* Print sum.
 
 ### Explanation
 
-Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not using a Ternary Operator in Python. If true, it’s even or it’s odd otherwise.
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
 
-The algorithm for the above code is as given below,
+The algorithm for the above code is as follows,
 
-*   import the required modules using import keyword.
-*   Initialize the required variables.
-*   Check if the number is divisible by 2 using a Ternary Operator, if true print even or odd otherwise using print() function.
+* Import the required module using the import keyword.
+* Initialize the required variables.
+* Run a for loop with range as N+1.
+* Keep adding the iter values to the Sum variable.
+* Print Sum variable using print() function.
 
-The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
+The output for the above mentioned code is the sum of all the natural numbers until the given value.
 
-# Method 3: Using Bitwise Operator
+# Method 2: Using Formula for the Sum of Nth Term
 
-This Method uses bitwise operators to check if a given number is Even or Odd.
+In this Method we use the formula for finding the sum of N term.
 
-> Bitwise Operators: 
-> In computer programming, a bitwise operation operates on a bit string, a bit array or a binary numeral at the level of its individual bits. It is a fast and simple action, basic to the higher-level arithmetic operations and directly supported by the processor.
+> Formula to Find the Sum of N terms: 
+> Sum = ( Num * ( Num + 1 ) ) / 2
 
 ## INPUT
 ```Python
-def isEven(num):
-  return not num&1
-
-if __name__ == "__main__":
-  num = 13
-  if isEven(num):
-    print('Even')
-  else:
-    print('Odd')
+num = 5
+print(int(num*(num+1)/2))
 ```
 ## OUTPUT
 ```
-Odd
+15
 ```
 
-### Algorithm
+### Working
 
-The working of the above code is as follows,
+For a user input n.
 
-*   If we have any number num doing bitwise ‘&‘ operation will give resultant as
-    *   1: If n is odd
-    *   0: if n is even
+* Initialize a variable sum = 0.
+* Use formula sum = n(n+1)/2.
+* Print sum
 
 ### Explanation
 
-Given an integer as input, the objective is check whether the number is even or odd in Python. To do so we check if it’s divisible by 2 or not using Bitwise Operator. If true, it’s even or it’s odd otherwise.
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
 
-The algorithm for the above code is as given below,
+The algorithm for the above code is as follows,
 
-*   Import the required modules using import keyword.
-*   Define a function isEven() which returns a boolean variable to check if the number is even or odd.
-*   Initialize the required variables.
-*   Check if the function after calling returns True or False, if true print even or odd otherwise using print() function.
+* Import the required modules using the import keyword.
+* Initialize the required variables.
+* Run a for loop with range as N+1.
+* Keep adding the iter values to the Sum variable.
+* Print Sum variable using print() function.
 
-The output for the above code is wither even or odd based on whether or not it’s divisible by 2.
+This algorithm uses the formula n(n+1)/2 that can be used to find sum of first N natural numbers. This also reduces the time complexity from O(n) to O(1). The output for the above mentioned code is the sum of all the natural numbers until the given value.
+
+# Method 3: Using Recursion
+
+This method uses Recursion to recursively add the natural numbers up to the given integer input using recursion in c++.
+
+## INPUT
+```Python
+def getSum(num):
+  if num == 1:
+    return 1
+  return num + getSum(num-1)
+
+num = 5
+print(getSum(num))
+```
+## OUTPUT
+```
+15
+```
+
+### Working
+
+For a user input n.
+
+* Initialize a variable sum = 0.
+* Call function getSum (num).
+* In each recursive call add the current value of n and call for lower recursion call using return num + getSum(num-1);
+* Print sum value
+
+### Explanation
+
+Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we recursively call a function  iterate through all the numbers that lay within N and keep incrementing the sum value.
+
+The algorithm for the above code is as follows,
+
+* Import the required modules using the import keyword.
+* Define a Recursive function getSum() which takes the number input as an argument.
+* Recursively call the function and keep on adding the return statements.
+* Initialize the required variables.
+* Call the Recursive function and print out the returned value using cout keyword.
+
+The output for the above mentioned code is the sum of all the natural numbers until the given value.
