@@ -1,19 +1,16 @@
 # Method 1 : Using for Loop
 
-In this method we’ll add all the natural numbers until the given integer input using for loop in Java.
+In this method we’ll use for loop to iterate through the numbers in a range of [0,num].
 
 ### Algorithm
 
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
+For an integer input “num” we do the following
 
-The algorithm for the above code is as follows,
+* initialize the required variables within the class.
+* Run a for loop from 0 to num+1 meanwhile appending all the numbers to sum variable.
+* Print the sum variable.
 
-* In the main() function initialize the required variables.
-* Run a for loop with range as N+1.
-* Keep adding the iter values to the Sum variable.
-* Print Sum variable.
-
-The output for the above mentioned code is the sum of all the natural numbers until the given value.
+Let’s implement the logic in Java Language.
 
 ## INPUT
 ```Java
@@ -36,24 +33,22 @@ public class Main
 55
 ```
 
-# Method 2 : Using Formula for the Sum of Nth Term
+# Method 2 : Using the Formula
 
-In this Method we use the formula for finding the sum of N term.
+In this method we’ll use a formula to find the sum of N integers in a series from sequence and series. The formula is mentioned below.
 
-> Formula to Find the Sum of N terms: 
-> Sum = ( Num * ( Num + 1 ) ) / 2
+> Formula to Find the Sum of N Integers: 
+> Sum = num * ( num + 1 ) / 2
 
 ### Algorithm
 
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
+For an integer input we do the following operations
 
-The algorithm for the above code is as follows,
+* Initialize the following variables.
+* Implement the formula as sum = num * ( num + 1 ) / 2.
+* Print the sum variable.
 
-* In the main() function initialize the required variables.
-* Substitute n with num variable in the above code and store it in sum variable.
-* Print Sum variable.
-
-This algorithm uses the formula n(n+1)/2 that can be used to find sum of first N natural numbers. This also reduces the time complexity from O(n) to O(1). The output for the above mentioned code is the sum of all the natural numbers until the given value.
+Let’s implement the above logic in Java language.
 
 ## INPUT
 ```Java
@@ -66,29 +61,26 @@ public class Main
 
        System.out.println ( n*(n+1)/2);
    }
- }
 ```
 ## OUTPUT
 ```
- 55
+55
 ```
 
 # Method 3 : Using Recursion
 
-This method uses Recursion to recursively add the natural numbers up to the given integer input using Recursion in Java.
+In this method we’ll use the concept of recursion to find the sum of all the number that lay from 0 to num. To know more about recursion, check out Recursion in Java
 
 ### Algorithm
 
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we recursively call a function  iterate through all the numbers that lay within N and keep incrementing the sum value.
+For a given integer input as “num” we perform the following steps
 
-The algorithm for the above code is as follows,
+* Initialize the required variables.
+* Define a recursive function with base case as num == 0.
+* Set recursive step call as num + recursum(num-1).
+* Call the recursive function and print the value returned by the function.
 
-* Define a Recursive function getSum() which takes the number input as an argument.
-* Recursively call the function and keep on adding the return statements.
-* In the main() function initialize the required variables.
-* Call the Recursive function and print out the returned value.
-
-The output for the above mentioned code is the sum of all the natural numbers until the given value.
+Let’s implement the above logic in Java Language.
 
 ## INPUT
 ```Java
