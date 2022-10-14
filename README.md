@@ -6,10 +6,10 @@
 **<h3 align="center">These TOP 100 Code are the best selected question to help you enhance your skills, expand your knowledge and prepare for coding exams from BASIC to ADVANCE.</h3>**
 <h2></h2>
 
-<div align= "center">## 🧑🏻About Us
+## 🧑🏻About Us
 
 &nbsp;
-<img src="Assets/MyImage.jpg" width="450" height="300"/> 
+<div align= "center"><img src="Assets/MyImage.jpg" width="450" height="300"/> 
 
 &nbsp;&nbsp;&nbsp;
 
