@@ -1,22 +1,21 @@
 <br>
 
-**Given an integer input “num” the objective is to sum up all the numbers that lay in the interval [0,num]. To do so we’ll write a code to Find the Sum of N Natural Numbers in Java.**
+**Given two integer inputs number1 and number2, the objective is to find the sum of all Number that lay in the given interval by writing a code to Find the Sum of the Numbers in a Given Range in Java Language.**
 
 
 ```
 Example
-Input : 6
-Output : 21
-Explanation : 0 + 1 + 2 + 3 + 4 + 5 + 6 = 21.
+Input : Number1 = 12 , Number2 = 15
+Output : 54
 ```
 <h2></h2>
-To do so we can use different approaches to write the Java code and some such methods are mentioned below,
+Here are some of the methods to solve the above mentioned problem in Java Language.
 
-* **Method 1**: Using for Loop
-* **Method 2**: Using Formula for the Sum of Nth Term
+* **Method 1**: Using Brute Force
+* **Method 2**: Using the Formula
 * **Method 3**: Using Recursion
 
-We’ll discuss and learn more about each above-mentioned method in detail in the sections below.
+We’ll discuss the above mentioned methods in detail in the upcoming sections.
  
 &nbsp; &nbsp; &nbsp;
 

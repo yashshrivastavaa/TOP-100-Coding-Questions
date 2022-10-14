@@ -1,4 +1,5 @@
 # Method 1
+
 ## INPUT
 ```c
 #include <stdio.h>

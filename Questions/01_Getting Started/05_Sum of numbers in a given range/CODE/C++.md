@@ -1,164 +1,181 @@
-# Method 1: Using for Loop
-
-In this method we’ll add all the natural numbers until the given integer input using for loop in C++.
+# Method 1: Using Brute Force
 
 ## INPUT
 ```cpp
-#include<bits/stdc++.h> 
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int n;
-    cout << "Enter a number : "; 
-    cin >> n;
+    int num1 = 5;
+    int num2 = 10;
     
-    int sum=0;
+    int sum = 0;
     
-    for(int i=1;i<=n;i++) 
-        sum+=i;
-
-    cout << sum;
-
-    return 0;
-}
-```
-## OUTPUT
-```
-Enter a number : 10
-55
-```
-
-### Working
-
-For a user input num.
-
-*   Initialize a variable sum = 0.
-*   Using a for loop in iteration ‘i’ iterate between [1, num].
-*   Each time add ‘i’ to current sum as sum = sum + i.
-*   Print sum.
-
-### Explanation
-
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
-
-The algorithm for the above code is as follows,
-
-*   Include the required header files using the include keyword.
-*   In the main() function initialize the required variables.
-*   Run a for loop with range as N+1.
-*   Keep adding the iter values to the Sum variable.
-*   Print Sum variable using cout keyword.
-
-The output for the above mentioned code is the sum of all the natural numbers until the given value.
-
-# Method 2: Using Formula for the Sum of Nth Term
-
-In this Method we use the formula for finding the sum of N term.
-
-> Formula to Find the Sum of N terms: 
-> Sum = ( Num * ( Num + 1 ) ) / 2
-
-## INPUT
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    int n;
-    
-    cout << "Enter a number : "; 
-    cin >> n;
-    
-    cout << n*(n+1)/2;
-    
-    return 0;
-}
-```
-## OUTPUT
-```
-Enter a number : 10
-55
-```
-
-### Working
-
-For a user input n.
-
-*   Step 1: Initialize a variable sum = 0.
-*   Step 2: Use formula sum = n(n+1)/2
-*   Step 3: Print sum
-
-### Explanation
-
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we iterate through all the numbers that lay within N and keep incrementing the sum value.
-
-The algorithm for the above code is as follows,
-
-*   Include the required header files using the include keyword.
-*   In the main() function initialize the required variables.
-*   Run a for loop with range as N+1.
-*   Keep adding the iter values to the Sum variable.
-*   Print Sum variable using cout keyword.
-
-This algorithm uses the formula n(n+1)/2 that can be used to find sum of first N natural numbers. This also reduces the time complexity from O(n) to O(1). The output for the above mentioned code is the sum of all the natural numbers until the given value.
-
-# Method 3: Using Recursion
-
-This method uses Recursion to recursively add the natural numbers up to the given integer input using recursion in c++.
-
-## INPUT
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-
-int getSum(int n)
-{
-    if(n==0) 
-        return n;
-        
-    return n + getSum(n-1);
-}
-
-int main()
-{
-    int n;
-    cout << "Enter a number : "; 
-    cin >> n;
-    
-    int sum = getSum(n);
+    for (int i = num1; i <= num2; i++)
+        sum = sum + i;
     
     cout << sum;
     
     return 0;
 }
+// Time complexity : O(N)
+// Space complexity : O(1)
 ```
 ## OUTPUT
 ```
-Enter a number : 10
-55
+45
 ```
 
 ### Working
 
-For a user input n.
+For input num1 (smaller) and num2(larger), The algorithm for the above problem is as follows,
 
-*   Initialize a variable sum = 0.
-*   Call function getSum (n).
-*   In each recursive call add the current value of n and call for lower recursion call using return n + getSum(n-1);
+*   Initialize sum = 0
+*   Run an iterative loop between [num1, num2] in iteration of (i)
+*   In each iteration do sum = sum + i;
 *   Print sum value
 
-### Explanation
+Let’s try and implement the algorithm in C++ Language.
 
-Given an integer input N, the objective is to calculate the sum of all the natural numbers until the integer N. To do so we recursively call a function  iterate through all the numbers that lay within N and keep incrementing the sum value.
+# Method 2: Using the Formula
 
-The algorithm for the above code is as follows,
+## INPUT
+```cpp
+#include <iostream>
+using namespace std;
 
-*   Include the required header files using the include keyword.
-*   Define a Recursive function getSum() which takes the number input as an argument.
-*   Recursively call the function and keep on adding the return statements.
-*   In the main() function initialize the required variables.
-*   Call the Recursive function and print out the returned value using cout keyword.
+int main()
+{
+    int x = 5;
+    int y = 10;
+    
+    int sum = y*(y+1)/2 - x*(x+1)/2 + x;
+    
+    cout << sum;
+    
+    return 0;
+}
+// Time complexity : O(1)
+// Space complexity : O(1)
+```
+## OUTPUT
+```
+45
+```
 
-The output for the above mentioned code is the sum of all the natural numbers until the given value.
+### Working
+
+Given two integer inputs num1 and num2, the objective is to write a code to Find the Sum of Numbers in a Given Range in C. To do so we’ll keep iterating and adding the numbers from num1 until num2 to the Sum variable. The Sum of N natural numbers can be found using formula – n(n+1)/2.
+
+Using the same approach sum between two intervals [x, y] can be found using
+
+*   sum = y*(y+1)/2 – x*(x+1)/2 + x;
+
+> **Why did we add the extra x at the end ?**: 
+> An extra x is added to offset because of overalpping interval
+> 
+> Example -
+> Assume you had to calculate sum b/w (3, ). Doing y * (y+1) / 2 – x * (x+1) / 2
+> We would have done is subtracted (1, 2, 3) from (1, 2, 3, 4, 5).
+> Thus only calculating the sum between (4, 5) not (3, 5).
+> So extra 3 i.e. a is added in the formula
+
+# Method 3: Using Recursion 1
+
+## INPUT
+```cpp
+#include <iostream>
+using namespace std;
+
+int calcSum(int a, int b){
+        
+    // stop when any recursion call tries to go over b (larger number)
+    if (a > b)
+        return 0;
+
+    return a + calcSum(a + 1, b);
+}
+
+int main()
+{
+    int a = 10;
+    int b = 15;
+    
+    int sum = calcSum(a, b);
+    
+    cout << sum;
+    
+    return 0;
+}
+// Time complexity : O(N)
+// Space complexity : O(1)
+// Auxiliary Space complexity : O(1)
+// Because of function call stack
+```
+## OUTPUT
+```
+75
+```
+
+### Working
+
+This method uses recursion in C++
+
+For inputs, a, b where a is smaller number and b is larger.
+
+*   Call a recursive function calcSum(a, b)
+*   In each recursive call add the current ‘a’ value and call the next iteration with ‘a+1’ value
+    *   That is, do this : return a + calcSum(i + 1, b);
+*   In base case when a becomes greater than b  return 0
+*   Print value returned by the recursive function in main
+
+# Method 3: Using Recursion 2
+
+## INPUT
+```cpp
+#include <iostream>
+using namespace std;
+
+int calcSum(int a, int b){
+        
+    // stop when any recursion call tries to go under a (smaller number)
+    if (b < a)
+        return 0;
+
+    return b + calcSum(a, b-1);
+}
+
+int main()
+{
+    int a = 10;
+    int b = 15;
+    
+    int sum = calcSum(a, b);
+    
+    cout << sum;
+    
+    return 0;
+}
+// Time complexity : O(N)
+// Space complexity : O(1)
+// Auxiliary Space complexity : O(1)
+// Because of function call stack
+```
+## OUTPUT
+```
+75
+```
+
+### Working
+
+This method uses recursion in C++. For inputs, a, b where a is the smaller number and b is larger.
+In the previous method, recursion went from a -> b. In this we will do the opposite that is it will go from b -> a
+
+*   Call a recursive function calcSum(a, b)
+*   In each recursive call add the current ‘b’ value and call the next iteration with ‘b-1’ value
+    *   That is, do this : return b + calcSum(a, b-1);
+*   In base case when b becomes smaller than a return 0
+*   Print value returned by the recursive function in main
+
+Let’s try and implement the Algorithm in C++ Language.
