@@ -130,7 +130,7 @@ For inputs, a, b where a is smaller number and b is larger.
 *   In base case when a becomes greater than b  return 0
 *   Print value returned by the recursive function in main
 
-# Method 3: Using Recursion 2
+# Method 4: Using Recursion 2
 
 ## INPUT
 ```cpp
