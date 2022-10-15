@@ -1,4 +1,3 @@
----
 **<h3 align="center">This repository contains Java, C, C++ and Python solutions to TOP 100 CODE</h3>**
 
 &nbsp;
