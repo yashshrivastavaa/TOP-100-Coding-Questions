@@ -1,36 +1,92 @@
 # Method 1 : Using if-else Statements 1
 
+### Working
+
+For the input integer “year” we perform the following
+
+* Check if the year variable is divisible by 400.
+* Check if the year variable is divisible by 4 but not by 100.
+* If the above conditions are satisfied, print it’s a Leap year. It’s not a Leap Year otherwise.
+
+Let’s try and implement the above mentioned logic in Java Language.
+
 ## INPUT
 ```Java
-// Write a program to find the largest of two numbers in java
-public class Main
-{
-  public static void main (String[]args)
-  {
+// Leap year program in Java
+// If the year satisfies either of the conditions, it's considered a leap year -
+// 1. The year must be divisible by 400.
+// 2. The year must be divisible by 4 but not 100.
+public class Main{
+   public static void main (String[]args)
+   {
 
-    int num1 = 10, num2 = 20, num3 = 30;
+     int year = 2020;
 
-    //checking if num1 is greatest
-    if (num1 >= num2 && num1 >= num3)
-        System.out.println (num1 + " is the greatest");
+     if (year % 400 == 0)
+       System.out.println (year + " is a Leap Year");
 
-    //checking if num2 is greatest
-    else if (num2 >= num1 && num2 >= num3)
-        System.out.println (num2 + " is the greatest");
+     else if (year % 4 == 0 && year % 100 != 0)
+       System.out.println (year + " is a Leap Year");
 
-    //checking if num2 is greatest
-    else if (num3 >= num1 && num3 >= num2)
-        System.out.println (num3 + " is the greatest");
-  }
-}
+     else
+         System.out.println (year + " is not a Leap Year");
+
+   }
+ }
 ```
 ## OUTPUT
 ```
-30 is the greatest
+2020 is a Leap Year
 ```
 
 # Method 2 : Using if-else Statements 2
 
+### Working
+
+For a given integer variable “year”, we check for the following
+
+* If the year variable is divisible by 400 or is it divisible by 4 but not 100.
+* Print it’s a Leap Year if true, Print it’s not a Leap year otherwise.
+
+Let’s implement the above logic in Java Language.
+
+## INPUT
+```Java
+public class Main
+ {
+   public static void main (String[]args)
+   {
+
+     int year = 2020;
+
+     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+       System.out.println (year + " is a Leap Year");
+
+     //not leap year
+     else
+         System.out.println (year + " is not a Leap Year");
+
+   }
+ }
+```
+## OUTPUT
+```
+2020 is a Leap Year
+```
+
+# Method 3 : Using Ternary Operator
+
+### Working
+
+In this method we’ll use the knowledge of ternary operators. To know more about ternary operators in C, check out Ternary operators in C.
+
+For a given input integer variable “year”, we check for the following using the ternary operator
+
+* Check if the year variable is divisible by 400 or divisible by 4 but not 100.
+* If either of the above mentioned conditions are satisfied, print it’s a Leap Year. Print it’s not a Leap Year otherwise.
+
+Let’s implement the above mentioned logic in Java Language.
+
 ## INPUT
 ```Java
 public class Main
@@ -38,55 +94,56 @@ public class Main
   public static void main (String[]args)
   {
 
-    int num1 = 10, num2 = 20, num3 = 30;
-
-    //comparing num1 with other numbers
-    if ((num1 >= num2) && (num1 >= num3))
-        System.out.println (num1 + " is the greatest");
-
-    //checking if num2 is greatest
-    else if (num2 >= num1 && num2 >= num3)
-        System.out.println (num2 + " is the greatest");
-
-    // num3 has to be greatest then if not above
+    int year = 2019;
+    
+     int flag = (year%400 == 0) || (year%4==0 && year%100!=0 ) ? 1 : 0;
+    if (flag ==1)
+    {
+        System.out.println (year + " is a Leap Year");
+    }
     else
-        System.out.println (num3 + " is the greatest");
+    {
+         System.out.println (year + " is not a Leap Year");
+    }
   }
 }
 ```
 ## OUTPUT
 ```
-30 is the greatest
+2019 is not a Leap Year
 ```
 
-# Method 3 : Using inbuilt max Function
-
-In this method we use the knowledge of Ternary Operators in Java.
-
-> Ternary Operator Syntax: 
-> ( Condition ) ? ( if True : Action ) : ( if False : Action )
+# Method 4 : Bonus Boolean Method
 
 ## INPUT
 ```Java
-public class Main
-{
-  public static void main (String[]args)
-  {
+class Main {
 
-    int num1 = 10, num2 = 20, num3 = 30;
+    public static void main(String[] args) {
 
-     int temp, result;    
-    
-    // find the largest b/w num1 and num2 & store in temp
-    temp = num1>num2 ? num1:num2;
-    
-    // find the largest b/w temp and num3 & finally printing it
-    result = temp>num3 ? temp:num3;  
-    System.out.println (result + " is the greatest");
-  }
+        // If the year satisfies either of the conditions, it's considered a leap year -
+        // 1. The year must be divisible by 400.
+        // 2. The year must be divisible by 4 but not 100.
+        int year = 2020;
+        boolean leap;
+
+        if (year % 400 == 0)
+            leap = true;
+
+        else if (year % 4 == 0 && year % 100 != 0)
+            leap = true;
+
+        else
+            leap = false;
+
+        if (leap)
+            System.out.println(year + " is a leap year.");
+        else
+            System.out.println(year + " is not a leap year.");
+    }
 }
 ```
 ## OUTPUT
 ```
-30 is the greatest
+2020 is not a Leap Year
 ```

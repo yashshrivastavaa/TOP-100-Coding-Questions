@@ -1,128 +1,162 @@
-# Method 1:
+# Method 1: Using if-else Statements 1
+
+In this method we’ll use the if-else statements to check for the above mentioned conditions one by one.
 
 ### Working
 
-For user inputs of numbers as first, second and third.
+For user input year check
 
-*   Step 1: Check if first number is greater than second and third
-    *   Print first is the greatest
-*   Step 2: Check if second number is greater than first and third
-    *   Print second is the greatest
-*   Step 3: Third number has to be greatest
-    *   Print third is the greatest
+*   If year % 400 == 0
+    *   Print Leap Year
+*   Else If year % 4 == 0 && year % 100 != 0
+    *   Print Leap Year
+*   Else, year will be not leap
 
-## INPUT
-```cpp
-#include <iostream>
-using namespace std;
-int main ()
-{
-    int first, second, third;
-    first=10,second=20,third=30;
-    
-    //comparing first with other numbers
-    if ((first >= second) && (first >= third))
-        cout << first << " is the greatest "; 
-
-    //comparing Second with other numbers 
-    else if ((second >= first) && (second >= third))
-        cout << second << " is the greatest";
-    
-    else
-        cout << third << " is the greatest";
- 
-    return 0;
-}
-// Time complexity : O(1)
-// Space complexity : O(1)
-```
-## OUTPUT
-```
-30 is the greatest
-```
-
-# Method 2:
-
-### Working
-
-For user inputs of numbers as first, second and third.
-
-This method requires you know how ternary operator in C++ works
-
-*   Step 1: Store the largest between first and second using ternary operator in variable temp
-    *   temp = first > second ? first:second;
-*   Step 2: Store the largest between temp and third using ternary operator in variable result
-    *   result = temp > third ? temp:third;
-*   Step 3: Print value of result
+Let’s implement the above logic in C++ Language.
 
 ## INPUT
 ```cpp
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main ()
-{
-    int first, second, third;
-    
-    first=10,second=20,third=30;
-    
-    int temp, result;
 
-    // find the largest bw first and second and store in temp
-    temp = first > second ? first:second;
-    
-    // find the largest bw temp and third and finally printing it
-    result = temp > third ? temp:third;
+int main()
+{
+    int year;
+
+    year=2000;
+
+    if(year % 400 == 0)
+        cout << year << " is a Leap Year";
         
-    // the above two ternary statements can be condensed into one ternary statement
-    //result = third > (first > second ? first : second) ? third : ((first > second) ? first : second);
+    else if(year % 4 == 0  && year % 100 != 0)
+        cout << year << " is a Leap Year";
+        
+    else
+        cout << year << " is not a Leap Year";
     
-    cout << result << " is the largest";
-
- 
     return 0;
 }
-// Time complexity : O(1)
-// Space complexity : O(1)
 ```
 ## OUTPUT
 ```
-30 is the largest
+2000 is a Leap Year
 ```
 
-# Method 3:
+# Method 2: Using if-else Statements 2
+
+In this method we’ll use the if-else statements to check for the above mentioned conditions one by one. This method is the more simplified version of the previous method.
 
 ### Working
 
-For user inputs of numbers as first, second and third.
+For user input year check –
 
-This method uses internal inbuilt function max(a, b) which returns the larger value.
+*   If (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+    *   Print Leap Year
+*   Else, year will be not leap
+
+Let’s implement the above logic in C++ Language.
+
+## INPUT
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int year;
+
+    year=2000;
+
+    if(year % 400 == 0 || (year % 4 == 0  && year % 100 != 0))
+        cout << year << " is a Leap Year";
+
+    //not leap year
+    else
+        cout << year << " is not a Leap Year";
+    
+    return 0;
+}
+```
+## OUTPUT
+```
+2000 is a Leap Year
+```
+
+# Method 3: Using Ternary Operator 
+
+In this method we’ll use the Ternary operator to check for the above mentioned conditions. For more information on Ternary operators check out Ternary operators in C.
+
+### Working
+
+For user input year check
+
+*   Using ternary operator check if the year is divisible by 400. Print it’s a leap year.
+*   Using Ternary operator check if the year is divisible by 4 but not with 100. Print it’s a leap year.
+*   Else print it’s not a leap year.
+
+Let’s implement the above mentioned logic in C++ Language.
+
+## INPUT
+```cpp
+#include 
+using namespace std;
+
+int main()
+{
+    int year;
+    year=2000;
+    int flag = (year%400 == 0) || (year%4==0 && year%100!=0 ) ? 1 : 0;
+    if (flag ==1)
+    {
+        printf("%d is a Leap Year",year);
+    }
+    else
+    {
+        printf("%d is not a Leap Year",year);
+    }
+
+    return 0;
+}
+```
+## OUTPUT
+```
+2000 is a Leap Year
+```
+
+# Method 4: Complicated if-else statements
+
+Some websites have also mentioned the below program as well, which is we why are just showing you the below, however, this is complicated to understand and code also we do not recommend writing this program below –
 
 ## INPUT
 ```cpp
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
-int main ()
-{
-    int first, second, third;
-    
-    first=10,second=20,third=30;
-    
-    int result;
+int main() {
 
-    result =  max(first,max(second, third));
-    
-    cout << result << " is the largest";
+    int year;
 
- 
+    year=2000;
+  
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                cout << year << " is a Leap Year";
+            }
+            else {
+                cout << year << " is not a Leap Year";
+            }
+        }
+        else {
+            cout << year << " is a Leap Year";
+        }
+    }
+    else {
+        cout << year << " is not a Leap Year";
+    }
     return 0;
 }
-
-// Time complexity : O(1)
-// Space complexity : O(1
 ```
 ## OUTPUT
 ```
-30 is the largest
+2000 is a Leap Year
 ```

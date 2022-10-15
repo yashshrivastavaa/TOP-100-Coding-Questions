@@ -1,88 +1,53 @@
-# Method 1 : Using if-else Statements
+# Method 1 : Using if-else Statements 1
 
-In this method we use if-else statements to find the Largest Number among the three integer inputs.
+In this method we’ll use the if-else statements to check whether or not the input integer satisfies either of the conditions. To learn more about control statements in python, check out if-else control statements in Python.
 
 ### Working
 
-For integer inputs number1, number2 and number3
+For a User Input year we do
 
-* Initialize the required variables.
-* Using if-else check if the numbers are greater than max and change max if true.
-* Print max variable.
+* Check if the year variable is divisible by 400.
+* Check if the year variable is divisible only by 4 and not 100.
+* If the above mentioned conditions are satisfied, prints “Leap Year”, print “Not a Leap Year” otherwise.
 
-Let’s implement the working in Python Language.
+Let’s implement the above logic in Python Language.
 
 ## INPUT
 ```Python
-num1, num2, num3 = 10 , 30 , 20
-max = 0
-if num1 >= num2 and num1 >= num3:
-  print(num1)
-elif num2 >= num1 and num2 >= num3:
-  print(num2)
+year = 2000
+if (year%400 == 0) or (year%4==0 and year%100!=0):
+  print("Leap Year")
 else:
-  print(num3)
+  print("Not a Leap Year")
 ```
 ## OUTPUT
 ```
-30
+Leap Year
 ```
 
-# Method 2: Using Nested if-else Statements
+# Method 2: Using if-else Statements 2
 
-In this method we use if-else statements within one another to find the Largest Number among the three integer inputs.
+In this method we’ll use the if-else statements to check whether or not the input integer satisfies either of the conditions. This method is a modified and simpler version of the previous method.
 
 ### Working
 
-For integer inputs number1, number2 and number3
+For a User Input year we do
 
-* Initialize the required variables.
-* Using nested if-else check if the numbers are greater than max and change max if true.
-* Print max variable.
+* The input is stored in an int type variable say year.
+* year is checked for being a leap year or not with the following condition if( ((year % 4 == 0)&&(year % 100 != 0)) || (year % 400==0) )
+* If the above condition is true then input is a leap year otherwise input is not a leap year.
 
-Let’s implement the working in Python Language.
+Let’s implement the above logic in Python Language.
 
 ## INPUT
 ```Python
-num1, num2, num3 = 10 , 30 , 20
-max = 0
-if num1 >= num2:
-  if num1 >= num3:
-    print(num1)
-elif num2 >= num1:
-  if num2 >= num3:
-    print(num2)
+year = 2000
+if( ((year % 4 == 0) and (year % 100 != 0)) or (year % 400==0) ):
+    print("Leap Year")
 else:
-  print(num3)
+    print("Not leap Year")
 ```
 ## OUTPUT
 ```
-30
+Leap Year
 ```
-
-# Method 3: Using Ternary Operator
-
-In this method we use Ternary operator to compare and find the Largest Number among the three integer inputs.
-
-### Working
-
-For integer inputs number1, number2 and number3
-
-* Initialize the required variables.
-* Using Ternary Operator check if the numbers are greater than max and change max if true.
-* Print max variable.
-
-Let’s implement the working in Python Language.
-
-## INPUT
-```Python
-num1, num2, num3 = 10 , 30 , 20
-max = num1 if num1>num2 else num2
-max = num3 if num3>max else max
-print(max)
-```
-## OUTPUT
-```
-30
-```
-

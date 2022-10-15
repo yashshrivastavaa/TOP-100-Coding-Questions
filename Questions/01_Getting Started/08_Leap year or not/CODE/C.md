@@ -1,94 +1,72 @@
 # Method 1 : Using if-else Statements 1
 
+In this method we’ll use if-else statements to check for the required conditions for an Year to be a Leap Year.
+
+### Working
+
+For a given integer input as year, we do the following
+
+*   Check if the year variable is divisible by 400. if true it’s a Leap Year, it’s not a Leap Year otherwise.
+*   Check if the year variable is divisible by 4 and not by 100. If true, print it’s a Leap year, It’s not a Leap Year otherwise.
+
+Let’s implement the above mentioned logic in C Language.
+
 ## INPUT
 ```c
 #include <stdio.h>
 int main ()
 {
-    int num1, num2, num3;
+    int year;
+    year=2000;
     
-    num1=13,num2=45,num3=27;
-
-    //comparing num1 with other numbers
-    if ((num1 >= num2) && (num1 >= num3))
-        printf("%d is the greatest", num1);
+    if(year % 400 == 0)
+        printf("%d is a Leap Year",year);
         
-    //comparing num2 with other numbers
-    else if ((num2 >= num1) && (num2 >= num3))
-         printf("%d is the greatest", num2);
-    
-    // num3 has to be greatest then if not above
+    else if(year % 4 == 0  && year % 100 != 0)
+        printf("%d is a Leap Year",year);
+        
     else
-         printf("%d is the greatest", num3);
+        printf("%d is not a Leap Year",year);
     
     return 0;
 }
 ```
 ## OUTPUT
 ```
-45 is the greatest
+2000 is a Leap Year
 ```
 
 # Method 2 : Using if-else Statements 2
 
+In this method we’ll use if-else statements to check for the required conditions for an Year to be a Leap Year. This method is the simplified version of previous method.
+
+### Working
+
+For a Given integer input for an year, we check
+
+*   If the year is divisible by 400. If true it’s a Leap Year, it’s not otherwise.
+*   If the year is divisible by 4 and not by 100. It’s a leap year if true, it’s not otherwise.
+
+Let’s implement the above logic in C Language.
+
 ## INPUT
 ```c
 #include <stdio.h>
 int main ()
 {
-    int num1, num2, num3;
+    int year;
+    year=2000;
     
-    num1=13,num2=45,num3=27;
-
-    //comparing num1 with other numbers
-    if ((num1 >= num2) && (num1 >= num3))
-        printf("%d is the greatest", num1);
+    if(year % 400 == 0 || (year % 4 == 0  && year % 100 != 0))
+        printf("%d is a Leap Year",year);
         
-    //comparing num2 with other numbers
-    else if ((num2 >= num1) && (num2 >= num3))
-         printf("%d is the greatest", num2);
-    
-    // num3 has to be greatest then if not above
     else
-         printf("%d is the greatest", num3);
+        printf("%d is not a Leap Year",year);
     
     return 0;
 }
 ```
 ## OUTPUT
 ```
-45 is the greatest
-```
-
-# Method 3 : Using Ternary Operator
-
-In this method we use the knowledge of Ternary Operators in C
-
-> Ternary Operator Syntax: 
-> ( Condition ) ? ( if True : Action ) : ( if False : Action )
-
-## INPUT
-```c
-#include <stdio.h> 
-int main ()
-{
-    int num1, num2, num3;
-    
-    num1=12,num2=98,num3=84;
-    
-    int temp, result;    
-    
-    // find the largest b/w num1 and num2 & store in temp
-    temp = num1>num2 ? num1:num2;
-    
-    // find the largest b/w temp and num3 & finally printing it
-    result = temp>num3 ? temp:num3;    
-     
-    printf(" %d is the largest", result);
-    return 0;
-}
-```
-## OUTPUT
-```
-98 is the largest
+2000 is a Leap Year
 ```
