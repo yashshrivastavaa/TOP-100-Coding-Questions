@@ -22,7 +22,7 @@ We’ll discuss the above-mentioned methods in detail in the upcoming sections. 
 > For any year to be a leap year the following two conditions must be checked. If the year satisfies either of the conditions, it's considered a leap year. Following are the conditions
 > 1. The year must be divisible by 400.
 > 2. The year must be divisible by 4 but not 100.
- 
+  
 &nbsp; &nbsp; &nbsp;
 
 ## Check The Code for the question below.
