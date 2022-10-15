@@ -18,10 +18,10 @@ In order to do so we check if the integer input satisfies the conditions for a l
 
 We’ll discuss the above-mentioned methods in detail in the upcoming sections. Before we get to coding check the blue box below for better understanding.
 
->> Conditions for Leap Year
->> For any year to be a leap year the following two conditions must be checked. If the year satisfies either of the conditions, it's considered a leap year. Following are the conditions
->> 1. The year must be divisible by 400.
->> 2. The year must be divisible by 4 but not 100.
+>>> Conditions for Leap Year
+>>> For any year to be a leap year the following two conditions must be checked. If the year satisfies either of the conditions, it's considered a leap year. Following are the conditions
+>>> 1. The year must be divisible by 400.
+>>> 2. The year must be divisible by 4 but not 100.
  
 &nbsp; &nbsp; &nbsp;
 
