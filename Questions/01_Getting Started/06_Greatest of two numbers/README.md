@@ -1,21 +1,21 @@
 <br>
 
-**Given two integer inputs number1 and number2, the objective is to find the sum of all Number that lay in the given interval by writing a code to Find the Sum of the Numbers in a Given Range in Java Language.**
+**Given two integer inputs N1 and N2, the objective is to write a code to Find the Greatest of the Two Numbers in Java. In order to do so we’ll compare the numbers using if-else statements.**
 
 
 ```
 Example
-Input : Number1 = 12 , Number2 = 15
-Output : 54
+Input : num1 = 12 and num2 = 3
+Output : 12
 ```
 <h2></h2>
-Here are some of the methods to solve the above mentioned problem in Java Language.
+To do so we’ll use if-else statements and print the output. Some methods to solve the above-mentioned Problem are given below.
 
-* **Method 1**: Using Brute Force
-* **Method 2**: Using the Formula
-* **Method 3**: Using Recursion
+* **Method 1**: Using if-else Statements
+* **Method 2**: Using Ternary Operator
+* **Method 3**: Using inbuilt max Function
 
-We’ll discuss the above mentioned methods in detail in the upcoming sections.
+All the above-mentioned methods are discussed in detail in the sections below.
  
 &nbsp; &nbsp; &nbsp;
 

@@ -1,83 +1,55 @@
-# Method 1 : Using Brute Force
+# Method 1 : Using if-else Statements
 
-In this method we’ll use loops to iterate through from the base interval to the upper interval meanwhile adding all the numbers to the sum variable.
+In this method we’ll use if-else statements to compare the two numbers and two numbers and print out the greatest.
 
 ### Algorithm
 
-For the given integer input intervals number1 and number2
+For the two given user inputs number1 and number2
 
-* Initialize the required variables.
-* Initiate a for loop from range [5,10].
-* Keep adding the value of the iter variable to sum variable.
-* Print the sum variable.
+* Check if both the integers are equal, print “Equal” if true.
+* Check if number1>number2, print number1 if true.
+* Check if number2>number1, print number2 if true.
 
-Let’s implement the above working in Java Language.
+Let’s implement the working in Java Language.
 
 ## INPUT
 ```Java
+// Write a program to find the largest of two numbers in java
 public class Main
-{
-  public static void main (String[]args)
-  {
-    int a = 5;
-    int b = 10;
+ {
+   public static void main (String[]args)
+   {
 
-    int sum = 0;
+     int num1 = 50, num2 = 20;
+     if (num1 == num2)
+       System.out.println ("both are equal");
+     else if (num1 > num2)
+         System.out.println (num1 + " is greater");
 
-    for (int i = a; i <= b; i++)
-        sum = sum + i;
-      System.out.println ("The sum is " + sum);
-  }
-}
+     else
+         System.out.println (num2 + " is greater");
+
+   }
+ }
 ```
 ## OUTPUT
 ```
-The sum is 45
+50 is greater
 ```
 
-# Method 2 : Using the Formula
+# Method 2 : Using Ternary Operator
 
-In this method we’ll use a sequence and series formula to find the sum of n numbers in a series. Formula : N*(N+1)/2.
+In this method we’ll use the Ternary Operator and compare the two numbers to check for the greatest among them.
+
+> Ternary Operator Syntax: 
+> ( Condition ) ? ( if True : Action ) : ( if False : Action )
 
 ### Algorithm
 
-For the given integer input intervals number1 and number2
+For the given integer inputs number1 and number2
 
-* Initialize the required variables.
-* Apply the given formula sum = b*(b+1)/2 – a*(a+1)/2 + a.
-* Print the sum variable as output.
-
-Let’s implement the above working in Java Language.
-
-## INPUT
-```Java
-public class Main
-{
-	public static void main(String[] args) {
-	    int num1 = 2;
-	    int num2 = 5;
-	    int sum = num2*(num2+1)/2 - num1*(num1+1)/2 + num1;
-		System.out.println("The Sum is "+ sum);
-	}
-}
-```
-## OUTPUT
-```
-The Sum is 14
-```
-
-# Method 3 : Using Recursion
-
-In this method we’ll use recursion to iterate through and sum up all the numbers that lay in the given interval.
-
-### Algorithm
-
-For the Integer inputs number1 and number2
-
-* Initialize the required variable sum = 0.
-* Define a recursive function with base case as number1 == number2.
-* Set the recursive set call as num1+ function(sum,num1+1,num2).
-* print the returned value after calling the recursive functions.
+* Initialize the required variable.
+* Check for the greatest among the two using Ternary Operator.
 
 Let’s implement the working in Java Language.
 
@@ -87,26 +59,53 @@ public class Main
 {
   public static void main (String[]args)
   {
-    int a = 5;
-    int b = 10;
+    int num1 = 50, num2 = 10, temp;
 
-    int sum = getSum (0, a, b);
-      System.out.println ("The sum is " + sum);
-  }
+    if (num1 == num2)
+      System.out.println ("Both are Equal\n");
+    else
+      {
+	temp = num1 > num2 ? num1 : num2;
+	System.out.println (temp + " is largest");
+      }
 
-
-  static int getSum (int sum, int i, int b)
-  {
-
-    // stop when any recursion call tries to go over b (larger number)
-    if (i > b)
-      return sum;
-
-    return i + getSum (sum, i + 1, b);
   }
 }
 ```
 ## OUTPUT
 ```
-The Sum is 45
+50 is largest
+```
+
+# Method 3 : Using inbuilt max Function
+
+In this method we’ll use the inbuilt max function to get the greatest of the two integer inputs.
+
+### Algorithm
+
+For the two integer inputs number1 and number2
+
+* Initialize the required variables.
+* Call the inbuilt max function with number1 and number2 as arguments.
+* Print the returned value.
+
+Let’s implement the working in Java Language.
+
+## INPUT
+```Java
+public class Main {
+    public static void main(String args[])
+    {
+        int num1 = 12, num2 = 21;
+        if (num1 == num2)
+            System.out.println("both are equal");
+        else
+            // prints the maximum of two numbers
+            System.out.println(Math.max(num1, num2) + " is greater");
+    }
+}
+```
+## OUTPUT
+```
+21 is greater
 ```
